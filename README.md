@@ -38,6 +38,7 @@ git checkout -b your-feature-branch
 当你任意修改完了过后，使用一下指令保存修改：
 
 ```
+git add .
 git commit -m 'text' 
 ```
 
