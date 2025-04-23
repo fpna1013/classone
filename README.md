@@ -19,7 +19,7 @@
 
 ## git 简易教程
 
-对于 collaborator，首先使用在一个指定的文件夹下的 powershell cmd or bash 输入指令：
+对于 collaborator，首先使用在一个指定的文件夹下的 powershell cmd or bash 输入指令（Windows 下推荐 powershell，打开的方式是在文件资源管理器路径栏输入 `powershell` 回车即可）：
 
 ```
 git clone https://github.com/fpna1013/classone/tree/main
@@ -42,9 +42,10 @@ git commit -m 'text'
 
 其中你来修改 `text` 来简要描述你本次做的事情，例如 "change the files in 牢璨""add 温志强 biography"或者其他。
 
-commit 过后，还在你的分支 branch 上，主 branch 和远程仓库还没有你的修改，如果你看到远程有修改。
+commit 过后，还在你的分支 branch 上，主 branch 和远程仓库还没有你的修改。
 
-这样的命令可以将远程仓库的修改合并到当前分支 branch：
+一般来说远程会有修改，这样的命令可以将远程仓库的修改合并到当前分支 branch：
+
 ```
 git checkout main
 git pull origin main
@@ -70,7 +71,7 @@ fatal: unable to access 'https://github.com/fpna1013/classone/': Failed to conne
 
 ## 一些问题
 
-如果在你修改 main branch 的时候又有其他的上传，使用以下的步骤：
+如果在你修改 main branch 的时候又有其他的上传（上面的教程是新建了一个分支 branch，因此不会出这个问题），使用以下的步骤：
 ```
 git stash
 git pull
@@ -80,7 +81,7 @@ git push origin main
 ```
 注意修改 `text` 中的内容。
 
-如果你需要了 conflict，请找到 conflict 的文件做出修改（在这个文件内会有两个冲突的版本），然后：
+如果出现了 conflict，请找到 conflict 的文件做出修改（在这个文件内会有两个冲突的版本），然后：
 
 ```
 git add x.x
