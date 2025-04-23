@@ -22,10 +22,8 @@
 对于 collaborator，首先使用在一个指定的文件夹下的 powershell cmd or bash 输入指令：
 
 ```
-git pull origin main
+git clone https://github.com/fpna1013/classone/tree/main
 ```
-
-如果需要 pull 其他分支，将 `main` 改成其他 branch 名字即可。
 
 在本地应该有一个 `classone` 的文件夹，使用 `cd classone` 即可进入该文件夹，也正式进入了 git。
 
