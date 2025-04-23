@@ -51,6 +51,13 @@ Already on 'main'
 Your branch is up to date with 'origin/main'.
 ```
 
+或者：
+
+```
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+```
+
 否则远程会有修改的话，这样的命令可以将远程仓库的修改合并到当前分支 branch：
 
 ```
